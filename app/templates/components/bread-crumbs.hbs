@@ -8,7 +8,7 @@
       <li>
         {{#if crumb.linkable}}
           {{#if crumb.model}}{{! to avoid null/undefined model in link-to }}
-            {{#link-to crumb.path crumb.model}}
+            {{#link-to crumb.path crumb.model.shortId}}
               {{crumb.label}}
             {{/link-to}}
           {{else}}
